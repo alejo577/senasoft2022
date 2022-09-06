@@ -1,0 +1,15 @@
+.reg{
+    background-color:rgb(197, 197, 109);
+    width:50%;
+    margin:auto;
+    text-align:center;
+    border-radius:50px;
+}
+.socio{
+    background-color:rgb(19, 211, 2);
+    margin:auto;
+    text-align:center;
+
+    border-top: 4px solid rgb(116, 108, 108);
+    border-bottom: 4px solid rgb(116, 108, 108);
+}

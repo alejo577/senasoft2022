@@ -26,9 +26,8 @@ return new class extends Migration
             $table->string('Municipio');
             $table->string('Direccion')->nullable();
             $table->string('Barrio');
-            $table->string('IdDatos')->notnull();
 
-            $table->foreign('IdDatos')->references('IdDatos')->on('datos');
+
             $table->foreign('Correo')->references('Correo')->on('usuarios');
 
             $table->timestamps();

@@ -15,8 +15,6 @@ return new class extends Migration
     {
         Schema::create('datos', function (Blueprint $table) {
             $table->id();
-            $table->string('IdDatos')->unique();
-            $table->string('NumeroDocumento');
             $table->string('Fecha_Nacimiento');
             $table->string('Etnia');
             $table->string('Condicion_Discapacidad');
