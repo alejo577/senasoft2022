@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'v9.3.6',
-        'version' => '9.3.6.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c6bcdabe021db2ff38e1e7c9a5ea199cf2e41971',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -154,6 +154,15 @@
             'reference' => '8c3d0a3f6af734494ad8f6fbbee0ba92422859f3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hamcrest/hamcrest-php',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'ibex/crud-generator' => array(
+            'pretty_version' => 'v1.3.3',
+            'version' => '1.3.3.0',
+            'reference' => '5736a2c53c5534cceb03d97ce9613aacb97c810c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ibex/crud-generator',
             'aliases' => array(),
             'dev_requirement' => true,
         ),
@@ -365,9 +374,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v9.3.6',
-            'version' => '9.3.6.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c6bcdabe021db2ff38e1e7c9a5ea199cf2e41971',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -417,6 +426,24 @@
             'install_path' => __DIR__ . '/../laravel/tinker',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'laravel/ui' => array(
+            'pretty_version' => 'v4.0.1',
+            'version' => '4.0.1.0',
+            'reference' => 'c43d29941ee8f41547572968123eadbd81392841',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/ui',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'laravelcollective/html' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '78c3cb516ac9e6d3d76cad9191f81d217302dea6',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravelcollective/html',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'league/commonmark' => array(
             'pretty_version' => '2.3.5',
@@ -709,8 +736,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
