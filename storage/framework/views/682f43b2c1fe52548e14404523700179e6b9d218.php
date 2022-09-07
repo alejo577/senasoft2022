@@ -4,9 +4,21 @@
     <h1>COMUNIDADES INDIGENAS</h1>
  </div>
 <br>
-<br>
-<br>
 
+<form  action="<?php echo e(route('consultar')); ?>" method="get">
+    <div class="contenedorbusqueda">
+    <input type="search" class="inputbuscar" placeholder="buscar"  name="consultar">
+    <label for=""></label>
+    <button type="submit" class="botonbusqueda" >BUSCAR </button>
+</div>
+</form>
+
+<br>
+<br>
+<div class="parrafo">
+<p> Sin duda alguna las tribus ancestrales son ricas en experiencias y conocimientos sobre el universo y la madre tierra,
+    si haces parte de este hermoso grupo poblacional te extendemos una invitacion para responder estos sondeos poblacionales con el fin de conocer  tu opinion</p>
+</div>
 
 <div class="row">
     <div class="col-sm-6">

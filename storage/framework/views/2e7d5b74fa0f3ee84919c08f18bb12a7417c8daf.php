@@ -4,8 +4,20 @@
     <h1>BIENVENIDO ESTIMADO CIUDADANO A SONDEOS SENASOFT</h1>
  </div>
  <br>
- <br>
- <br>
+ <form  action="<?php echo e(route('consultar')); ?>" method="get">
+    <div class="contenedorbusqueda">
+    <input type="search" class="inputbuscar" placeholder="buscar"  name="consultar">
+    <label for=""></label>
+    <button type="submit" class="botonbusqueda" >BUSCAR </button>
+</div>
+</form>
+<br>
+<br>
+<div class="parrafo">
+    <p>
+        Bienvenido estimad@ usuari@ para nosotros es muy importante conocer tu opinion de lo que respecta tu vida diaria, esta plataforma esta diseñada para que repondas unos sondeos que van acordes a tu estilo de vida y tu comunidad, animate a responder.
+        </p>
+</div>
 
 
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/senasoft2022/resources/css/estilos.css">
+    <link rel="stylesheet" href="/senasoft2022/resources/css/estilosadmin.css">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/e3aa94006d.js" crossorigin="anonymous"></script>
@@ -16,28 +16,18 @@
 <body>
 
 
-
-
-
-<div class="intro">
-<a href="{{route('index')}}"> <img class="logo" src ="/senasoft2022/img/logo.png" width="150px" height="159px" >  <br/>  </img></a>
-<h1>SONDEOS SENASOFT 2022</h1>
-
-</div>
-
-
     <div class="navegador">
         <ul>
-        <li class="li"><a class="a" href="{{route('index')}}">INICIO</a></li>
-        <li class="li"><a class="a" href="{{route('afro')}}">COMUNIDADES AFRO</a></li>
-        <li class="li"><a  class="a" href="{{route('lgbt')}}">COMUNIDADES LGBTI</a></li>
-        <li class="li"><a class="a" href="{{route('indigenas')}}">COMUNIDADES INDIGENAS</a></li>
-        <li class="li"><a class="a" href="{{route('urbanas')}}">COMUNIDADES URBANAS</a></li>
-        <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
+        <li class="li"><a class="a" href="{{route('indexadmin')}}">INICIO</a></li>
+        <li class="li"><a class="a" href="">GENERAR SONDEO</a></li>
+        <li class="li"><a  class="a" href="{{route('resultados')}}">RESULTADOS</a></li>
+        <li class="li"><a  class="a" href="{{route('estadisticas')}}">ESTADISTICAS</a></li>
+        <li class="li"><a  class="a" href="{{route('certificados')}}">CERTIFICADOS</a></a></li>
 
+        <li class="li"><a class="a" href="#">CERRAR SESION</a></li>
 
-        <li><a href="">REGISTRATE</a></li>
-</ul>
+    </ul>
+        </div>
 
        <form class="buscar" action="">
 
@@ -45,7 +35,6 @@
 <br>
 <br>
 
-       </form>
 
 
        @yield('content')

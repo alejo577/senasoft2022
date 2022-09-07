@@ -9,25 +9,12 @@
 
 
 
-<?php $__currentLoopData = $consultas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $consulta): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<?php $__currentLoopData = $busquedasondeo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $busquedasondeos): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
+<h5 class="card-title"><?php echo e($busquedasondeos->Tema); ?></h5>
 
-<div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><?php echo e($consultas->Temas); ?></h5>
-          <img src="https://http2.mlstatic.com/D_NQ_NP_753777-MLM50866844764_072022-V.webp" alt="">
-          <p class="card-text"><?php echo e($consultas->Pregunta); ?></p>
-          <p class="card-text"><?php echo e($consultas->Poblacion); ?></p>
-          <a href="#" class="btn btn-primary">responder</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
- <?php $__env->stopSection(); ?>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<?php $__env->stopSection(); ?>
 
 
 

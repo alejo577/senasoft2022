@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sondeo extends Model
 {
     use HasFactory;
+    protected $table="sondeos";
+
+    protected $fillable=[ 'id','Tema','Pregunta','Poblacion'];
 }

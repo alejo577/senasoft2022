@@ -7,8 +7,19 @@
  </div>
 
 <br>
+<form  action="{{route('consultar')}}" method="get">
+    <div class="contenedorbusqueda">
+    <input type="search" class="inputbuscar" placeholder="buscar"  name="consultar">
+    <label for=""></label>
+    <button type="submit" class="botonbusqueda" >BUSCAR </button>
+</div>
+</form>
+
 <br>
 <br>
+<div class="parrafo">
+<p> Si eres parte de esta  gran comunidad pobacional  te extendemos una invitacion para responder estos sondeos poblacionales con el fin de conocer  tu opinion</p>
+</div>
 <div class="row">
     <div class="col-sm-6">
       <div class="card">

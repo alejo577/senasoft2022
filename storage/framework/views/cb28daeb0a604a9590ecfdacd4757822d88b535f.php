@@ -16,6 +16,16 @@
 <body>
 
 
+
+
+
+<div class="intro">
+<a href="<?php echo e(route('index')); ?>"> <img class="logo" src ="/senasoft2022/img/logo.png" width="150px" height="159px" >  <br/>  </img></a>
+<h1>SONDEOS SENASOFT 2022</h1>
+
+</div>
+
+
     <div class="navegador">
         <ul>
         <li class="li"><a class="a" href="<?php echo e(route('index')); ?>">INICIO</a></li>
@@ -24,25 +34,16 @@
         <li class="li"><a class="a" href="<?php echo e(route('indigenas')); ?>">COMUNIDADES INDIGENAS</a></li>
         <li class="li"><a class="a" href="<?php echo e(route('urbanas')); ?>">COMUNIDADES URBANAS</a></li>
         <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
-        <li class="li"><a class="a" href="">REGISTRATE</a></li>
 
-    </ul>
-        </div>
+
+        <li><a href="">REGISTRATE</a></li>
+</ul>
 
        <form class="buscar" action="">
 
 
 <br>
 <br>
-<form  action="<?php echo e(route('consultar')); ?>" method="get">
-    <div class="contenedorbusqueda">
-    <input type="search" class="inputbuscar" placeholder="buscar" type="text" name="consultar">
-    <label for=""></label>
-    <button type="submit" class="botonbusqueda" >BUSCAR </button>
-</div>
-</form>
-
-
 
        </form>
 
@@ -70,7 +71,7 @@
 
 
 <div class="copyrigth">
-    <p>© 2022 Senasoft, todos los derechos reservados, Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
+    <p>© 2022 Senasoft, todos los derechos reservados.Autores Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
 </div>
 
     </footer>

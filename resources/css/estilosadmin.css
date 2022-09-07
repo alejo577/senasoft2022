@@ -1,21 +1,8 @@
+html{
+    line-height: 1.5em;
+}
 
 
-.logo{
-    display: flex;
-    justify-content: center;
-margin-right: 20px;
-    align-items: center;
-padding: 0;
-;
-    border-radius: 100%;
-}
-.intro{
-    display: flex;
-    justify-content: center;
-     align-items: center;
-    margin-left: -1%;
-    border-radius: 100%;
-}
 .navegador{
 
 
@@ -23,11 +10,6 @@ padding: 0;
     width: 100%;
     height: 50px;
     padding: 6px;
-    border-top: 4px solid rgb(0, 0, 0);
-border-bottom: 4px solid rgb(0, 0, 0);
-margin-left: auto;
-margin-right: auto;
-margin-top:1%;
 
 
 
@@ -43,14 +25,9 @@ margin-top:1%;
     display: inline;
     text-align: center;
 padding: 1PX;
-list-style: none;
-  margin: 0;
-  padding: 0;
-
 
 
  }
-
 
 
  .navegador li a {
@@ -68,25 +45,6 @@ padding: 7px;
 
  }
 
- .submenu {
-    position: absolute;
-    width: 170px;
-    visibility: visible;
-    opacity: opacity 1.5s;
-    background:#a1a3a3;
-  align-content:center;
-  border-radius:5px;
-
-
-  }
-  .menu li:hover .submenu{
-  visibility: visible;
-  opacity: 1;
-  }
-  .menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  }
  .titulo{
 
 text-align: center;
@@ -108,7 +66,7 @@ text-align: center;
     width: 360px;
     height: 38px;
 
-    margin-top: 1%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 
@@ -126,18 +84,6 @@ text-align: center;
    border-radius: 5px;
     align-items: center;
 
-
- }
-
- .parrafo{
-
-
-    border-top: 4px solid rgb(0, 0, 0);
-background-color: beige;
-font-size: 23px;
-margin: 2%;
-font-family: 'Times New Roman', Times, serif;
-margin-top: 1%;
 
  }
 

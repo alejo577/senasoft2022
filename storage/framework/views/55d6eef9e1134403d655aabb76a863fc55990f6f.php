@@ -1,11 +1,23 @@
 <?php $__env->startSection('content'); ?>
-<br>
+
 <div class="titulo">
     <h1>COMUNIDADES AFRODESCENDIENTES</h1>
  </div>
 <br>
+
+<form  action="<?php echo e(route('consultar')); ?>" method="get">
+    <div class="contenedorbusqueda">
+    <input type="search" class="inputbuscar" placeholder="buscar"  name="consultar">
+    <label for=""></label>
+    <button type="submit" class="botonbusqueda" >BUSCAR </button>
+</div>
+</form>
+
 <br>
 <br>
+<div class="parrafo">
+<p> Los ancestros del mundo guardan una gran coleccion de historias y secretos del mundo, su cultura musical y religiosa hacen de esta una de las culturas mas biodiversas en el mundo, te extendemos una invitacion para responder estos sondeos poblacionales con el fin de conocer  tu opinion</p>
+</div>
 
 <div class="row">
     <div class="col-sm-6">
