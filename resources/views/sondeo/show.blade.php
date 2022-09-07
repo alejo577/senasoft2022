@@ -1,10 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.appx')
 
-@section('template_title')
-    {{ $sondeo->name ?? 'Show Sondeo' }}
-@endsection
 
-@section('content')
+
+
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -19,7 +17,7 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
                             <strong>Tema:</strong>
                             {{ $sondeo->Tema }}
@@ -38,4 +36,4 @@
             </div>
         </div>
     </section>
-@endsection
+

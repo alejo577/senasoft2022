@@ -1,10 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.appx')
 
-@section('template_title')
-    Update Sondeo
-@endsection
 
-@section('content')
+
+
     <section class="content container-fluid">
         <div class="">
             <div class="col-md-12">
@@ -28,4 +26,4 @@
             </div>
         </div>
     </section>
-@endsection
+

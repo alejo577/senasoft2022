@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PersonaxlController;
 use App\Http\Controllers\SondeoController;
 use Illuminate\Support\Facades\Auth;
@@ -29,13 +30,37 @@ Route::get('registro', function () {
     return view('registro');
 })->name('registro');
 
+Route::get('registroadmin', function () {
+    return view('registroadmin');
+})->name('registroadmin');
+
+Route::get('loginadmin', function () {
+    return view('loginadmin');
+})->name('loginadmin');
+
+
+//prueba del inicio admin
+Route::get('x', function () {
+    return view('x');
+})->name('x');
+
+//prueba del inicio usuario
+Route::get('l', function () {
+    return view('l');
+})->name('l');
+
 //devolucion de controlador del formulario de login
 Route::post('lg',[PersonaxlController::class,'index'])->name('lg');
 //devolucion de controlador del formulario de registro
 Route::post('reg',[PersonaxlController::class,'store'])->name('reg');
 
+//devolucion de controlador del formulario de registro dela dministrador
+Route::post('regAdm',[AdminController::class,'store'])->name('regAdm');
+
+Route::post('lgadmin',[AdminController::class,'index'])->name('lgadmin');
+
 Route::resource('sondeos', SondeoController::class);
 
-Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

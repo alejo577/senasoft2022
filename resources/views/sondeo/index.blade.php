@@ -1,10 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.appx')
 
-@section('template_title')
-    Sondeo
-@endsection
 
-@section('content')
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -35,7 +32,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Tema</th>
 										<th>Pregunta</th>
 										<th>Poblacion</th>
@@ -47,7 +44,7 @@
                                     @foreach ($sondeos as $sondeo)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $sondeo->Tema }}</td>
 											<td>{{ $sondeo->Pregunta }}</td>
 											<td>{{ $sondeo->Poblacion }}</td>
@@ -57,8 +54,8 @@
                                                     <a class="btn btn-sm btn-primary " href="{{ route('sondeos.show',$sondeo->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
                                                     <a class="btn btn-sm btn-success" href="{{ route('sondeos.edit',$sondeo->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    //@method('DELETE')
+                                                    //<button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -72,4 +69,4 @@
             </div>
         </div>
     </div>
-@endsection
+

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Dato;
 use App\Models\Persona;
 use App\Models\Usuario;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 
 class PersonaxlController extends Controller
@@ -14,9 +17,28 @@ class PersonaxlController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $usuario= DB::table('usuarios')->where('Correo','=',$request->input('email'))->first();
+
+        if (isset($usuario)){
+
+            $pass = $usuario->Contraseña;
+            $pass2 = $request->input('pass');
+            $email = $request->input('email');
+
+            if (Hash::check($pass2, $pass)){
+
+                Session::put('sesionusuario',"$email");
+
+                echo "<script>alert('Bienvenido {$email}');window.location = 'l'</script>";
+            }else{
+                echo "<script>alert('La contraseña es incorrecta');window.location = 'login'</script>";
+            }
+
+        }else{
+            echo "<script>alert('el correo no se encuentra en la base de datos');window.location= 'login'</script>";
+        }
     }
 
     /**
@@ -47,7 +69,9 @@ class PersonaxlController extends Controller
 
     $usuariox = new Usuario;
     $usuariox->Correo=$request->input('email');
-    $usuariox->Contraseña=$request->input('pass');
+    $pass=Hash::make($request->input('pass'));
+
+    $usuariox->Contraseña=$pass;
     $usuariox->save();
 
     $personax = new Persona;

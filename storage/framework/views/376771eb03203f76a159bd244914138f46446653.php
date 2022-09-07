@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>REGISTRO</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="/senasoft2022/resources/css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <body>
-        Registro de Usuarios
-    <form action="<?php echo e(reg); ?>" method="post">
+    <div class="reg">
+        <h1>Iniciar Sesion Usuario</h1>
+        <form action="<?php echo e(route('lg')); ?>" method="post">
+            <?php echo csrf_field(); ?>
+<br>
+            <div>
+                <label for="email">Correo</label>
+                <input type="text" name="email" id="email">
 
-        <div>
-            <label for="email">Correo</label>
-            <input type="email">
-        </div>
-        <button type="submit">Registrarse</button>
-    </form>
-    </body>
+            </div>
+<br>
+            <div>
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+<br>
 
+            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+            <a href="<?php echo e(route('registro')); ?>" class="btn btn-danger">Registrarse</a>
+        </form>
+    </div>
 </body>
 </html>
 <?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/login.blade.php ENDPATH**/ ?>

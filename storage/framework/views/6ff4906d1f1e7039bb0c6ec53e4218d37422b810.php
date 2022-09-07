@@ -1,8 +1,3 @@
-<?php $__env->startSection('template_title'); ?>
-    Create Sondeo
-<?php $__env->stopSection(); ?>
-
-<?php $__env->startSection('content'); ?>
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -25,6 +20,5 @@
             </div>
         </div>
     </section>
-<?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/create.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.appx', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/create.blade.php ENDPATH**/ ?>

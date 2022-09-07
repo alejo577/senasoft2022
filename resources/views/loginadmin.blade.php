@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Loginadm</title>
     <link rel="stylesheet" href="/senasoft2022/resources/css/app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <div class="reg">
-        <h1>Iniciar Sesion Usuario</h1>
-        <form action="{{route('lg')}}" method="post">
+        <h1>Iniciar Sesion Admin</h1>
+        <form action="{{route('lgadmin')}}" method="post">
             @csrf
 <br>
             <div>
-                <label for="email">Correo</label>
-                <input type="text" name="email" id="email">
+                <label for="usu">Usuario</label>
+                <input type="text" name="usu" id="usu">
 
             </div>
 <br>
@@ -27,7 +27,7 @@
 <br>
 
             <button type="submit" class="btn btn-primary">Iniciar sesion</button>
-            <a href="{{route('registro')}}" class="btn btn-danger">Registrarse</a>
+            <a href="{{route('registroadmin')}}" class="btn btn-danger">Registrarse</a>
         </form>
     </div>
 </body>

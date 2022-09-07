@@ -1,10 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.appx')
 
-@section('template_title')
-    Create Sondeo
-@endsection
 
-@section('content')
+
+
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -27,4 +25,3 @@
             </div>
         </div>
     </section>
-@endsection
