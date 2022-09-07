@@ -70,7 +70,7 @@
 
 
 <div class="copyrigth">
-    <p>© 2022 Senasoft, todos los derechos reservados, Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
+    <p>© 2022 Senasoft, todos los derechos reservados.Autores Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
 </div>
 
     </footer>
