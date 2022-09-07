@@ -58,6 +58,8 @@ unset($__errorArgs, $__bag); ?></label>
 <br>
             <button type="submit" class="btn btn-primary">Registrarse</button>
             <a href="<?php echo e(route('loginadmin')); ?>" class="btn btn-danger">Iniciar sesion</a>
+            <br>
+            <a href="<?php echo e(route('elije')); ?>" style="color: white">volver</a>
         </form>
     </div>
 </body>

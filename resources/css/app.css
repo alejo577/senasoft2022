@@ -1,15 +1,37 @@
 .reg{
-    background-color:rgb(197, 197, 109);
+    background-color:rgb(121, 121, 111);
     width:50%;
     margin:auto;
     text-align:center;
-    border-radius:50px;
+    border-radius:20px;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    border-left: 4px solid rgb(229, 255, 0);
+    border-right: 4px solid rgb(229, 255, 0);
 }
 .socio{
-    background-color:rgb(19, 211, 2);
+    color: white;
+    background-color:rgb(39, 48, 38);
     margin:auto;
     text-align:center;
 
-    border-top: 4px solid rgb(116, 108, 108);
-    border-bottom: 4px solid rgb(116, 108, 108);
+    border-top: 4px solid rgb(0, 0, 0);
+    border-left: 4px solid rgb(81, 192, 6);
+    border-right: 4px solid rgb(36, 196, 4);
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+.pregunta{
+
+
+    background-color:rgb(116, 108, 108);
+    width:50%;
+    margin:auto;
+    text-align:center;
+    border-radius:20px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+
 }

@@ -5,7 +5,7 @@ use App\Http\Controllers\PersonaxlController;
 use App\Http\Controllers\SondeoController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Sondeo;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
@@ -24,6 +24,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//inicio
+
+Route::get('inicio', function () {
+    return view('inicio');
+})->name('inicio');
+
+//ruta de la vista de login
+Route::get('elije', function () {
+    return view('elije');
+})->name('elije');
 
 //ruta de la vista de login
 Route::get('login', function () {
@@ -104,7 +115,7 @@ Route::get('/urbanas', function () {
 
 //ruta funcional de busquedas
 
-Route::get('/consultar', function(Request $request){
+Route::get('/busquedas', function(Request $request){
 
     $busqueda=$request::input('consultar');
     $consultas=Sondeo::select('Tema','Pregunta','Poblacion')
@@ -114,3 +125,14 @@ Route::get('/consultar', function(Request $request){
 
 
     })->name('consultar');
+
+
+Route::get('/busqueda2', function (Request $request) {
+
+    $buscar = $request->input('buscar');
+    $consulta = Sondeo::all()
+    ->where('Tema','LIKE',$buscar);
+
+
+    return view('busqueda2',compact('consulta'));
+})->name('busqueda2');

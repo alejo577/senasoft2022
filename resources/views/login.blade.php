@@ -1,3 +1,6 @@
+@extends('layouts.ciudadanolayout')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
 <br>
             <div>
                 <label for="email">Correo</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" required>
 
             </div>
 <br>
@@ -26,9 +29,11 @@
             </div>
 <br>
 
-            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+            <button type="submit" class="btn btn-success">Iniciar sesion</button>
             <a href="{{route('registro')}}" class="btn btn-danger">Registrarse</a>
+            <a href="{{route('index')}}" style="color: white">volver</a>
         </form>
     </div>
 </body>
 </html>
+@endsection

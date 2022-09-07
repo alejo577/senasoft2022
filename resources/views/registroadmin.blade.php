@@ -37,6 +37,8 @@
 <br>
             <button type="submit" class="btn btn-primary">Registrarse</button>
             <a href="{{route('loginadmin')}}" class="btn btn-danger">Iniciar sesion</a>
+            <br>
+            <a href="{{route('elije')}}" style="color: white">volver</a>
         </form>
     </div>
 </body>

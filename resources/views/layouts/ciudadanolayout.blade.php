@@ -23,8 +23,9 @@
         <li class="li"><a  class="a" href="{{route('lgbt')}}">COMUNIDADES LGBTI</a></li>
         <li class="li"><a class="a" href="{{route('indigenas')}}">COMUNIDADES INDIGENAS</a></li>
         <li class="li"><a class="a" href="{{route('urbanas')}}">COMUNIDADES URBANAS</a></li>
-        <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
-        <li class="li"><a class="a" href="">REGISTRATE</a></li>
+        <li class="li"><a class="a" href="{{route('elije')}}">INICIAR SESION</a></li>
+        <li class="submenu"><a class="a" href="">REGISTRATE</a></li>
+
 
     </ul>
         </div>

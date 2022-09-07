@@ -1,3 +1,4 @@
+<?php $__env->startSection('content'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
 <br>
             <div>
                 <label for="email">Correo</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" required>
 
             </div>
 <br>
@@ -26,10 +27,13 @@
             </div>
 <br>
 
-            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+            <button type="submit" class="btn btn-success">Iniciar sesion</button>
             <a href="<?php echo e(route('registro')); ?>" class="btn btn-danger">Registrarse</a>
+            <a href="<?php echo e(route('index')); ?>" style="color: white">volver</a>
         </form>
     </div>
 </body>
 </html>
-<?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/login.blade.php ENDPATH**/ ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.ciudadanolayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/login.blade.php ENDPATH**/ ?>

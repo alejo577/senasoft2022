@@ -1,3 +1,4 @@
+<?php $__env->startSection('content'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -167,10 +168,11 @@ unset($__errorArgs, $__bag); ?></label>
 
 
         <br>
-        <button type="submit" class="btn btn-primary">Registrarse</button>
+        <button type="submit" class="btn btn-success">Registrarse</button>
         <br>
-        <a href="">Registrese como administrador</a>
+
         <a href="<?php echo e(route('login')); ?>" class="btn btn-danger">Inicie sesion</a>
+        <a href="<?php echo e(route('elije')); ?>" style="color: white">volver</a>
     </form>
 </div>
 
@@ -178,5 +180,6 @@ unset($__errorArgs, $__bag); ?></label>
 
 </body>
 </html>
+<?php $__env->stopSection(); ?>
 
-<?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/registro.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.ciudadanolayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/registro.blade.php ENDPATH**/ ?>

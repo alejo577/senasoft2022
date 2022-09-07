@@ -1,3 +1,6 @@
+@extends('layouts.ciudadanolayout')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,10 +163,11 @@
 
 
         <br>
-        <button type="submit" class="btn btn-primary">Registrarse</button>
+        <button type="submit" class="btn btn-success">Registrarse</button>
         <br>
-        <a href="">Registrese como administrador</a>
+
         <a href="{{route('login')}}" class="btn btn-danger">Inicie sesion</a>
+        <a href="{{route('elije')}}" style="color: white">volver</a>
     </form>
 </div>
 
@@ -171,4 +175,4 @@
 
 </body>
 </html>
-
+@endsection('')
