@@ -1,13 +1,14 @@
 <?php $__env->startSection('content'); ?>
+
+
 <br>
 <div class="titulo">
-    <h1>BIENVENIDO ESTIMADO CIUDADANO A SONDEOS SENASOFT</h1>
- </div>
- <br>
- <br>
- <br>
+   <h1>COMUNIDADES URBANAS</h1>
+</div>
+<br>
 
-
+<br>
+<br>
 
 <div class="row">
     <div class="col-sm-6">
@@ -33,9 +34,12 @@
 
 
   </div>
+
+
+
  <?php $__env->stopSection(); ?>
 
 
 
 
-<?php echo $__env->make('layouts.ciudadanolayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/vistas/inicio.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.ciudadanolayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/vistas/urbanas.blade.php ENDPATH**/ ?>

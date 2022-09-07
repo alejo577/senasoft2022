@@ -12,37 +12,42 @@
     <title>hola- <?php echo $__env->yieldContent('inicio'); ?></title>
 
 </head>
+
 <body>
+
 
     <div class="navegador">
         <ul>
-        <li class="li"><a class="a" href="#">INICIO</a></li>
-        <li class="li"><a class="a" href="#">COMUNIDADES AFRO</a></li>
-        <li class="li"><a  class="a" href="#">COMUNIDADES LGBTI</a></li>
-        <li class="li"><a class="a" href="#">COMUNIDADES INDIGENAS</a></li>
-        <li class="li"><a class="a" href="#">COMUNIDADES URBANAS</a></li>
-
+        <li class="li"><a class="a" href="<?php echo e(route('index')); ?>">INICIO</a></li>
+        <li class="li"><a class="a" href="<?php echo e(route('afro')); ?>">COMUNIDADES AFRO</a></li>
+        <li class="li"><a  class="a" href="<?php echo e(route('lgbt')); ?>">COMUNIDADES LGBTI</a></li>
+        <li class="li"><a class="a" href="<?php echo e(route('indigenas')); ?>">COMUNIDADES INDIGENAS</a></li>
+        <li class="li"><a class="a" href="<?php echo e(route('urbanas')); ?>">COMUNIDADES URBANAS</a></li>
         <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
+        <li class="li"><a class="a" href="">REGISTRATE</a></li>
 
-        </ul>
+    </ul>
         </div>
 
        <form class="buscar" action="">
 
 
-
-
-<div class="contenedorbusqueda">
-    <input class="inputbuscar" placeholder="buscar" type="text" name="buscar">
+<br>
+<br>
+<form  action="<?php echo e(route('consultar')); ?>" method="get">
+    <div class="contenedorbusqueda">
+    <input type="search" class="inputbuscar" placeholder="buscar" type="text" name="consultar">
     <label for=""></label>
-    <button class="botonbusqueda">BUSCAR </button>
+    <button type="submit" class="botonbusqueda" >BUSCAR </button>
 </div>
+</form>
+
 
 
        </form>
 
-    <?php echo $__env->yieldContent('content'); ?>
 
+       <?php echo $__env->yieldContent('content'); ?>
 
     <footer class="footer">
 
@@ -68,8 +73,8 @@
     <p>© 2022 Senasoft, todos los derechos reservados, Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
 </div>
 
-
     </footer>
+
 </body>
 </html>
 <?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/layouts/ciudadanolayout.blade.php ENDPATH**/ ?>
