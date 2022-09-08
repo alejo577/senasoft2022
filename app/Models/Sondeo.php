@@ -21,8 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Sondeo extends Model
 {
-<<<<<<< HEAD
-    
+
     static $rules = [
 		'Tema' => 'required',
 		'Pregunta' => 'required',
@@ -46,12 +45,6 @@ class Sondeo extends Model
     {
         return $this->hasMany('App\Models\Respuestasondeo', 'Pregunta', 'Pregunta');
     }
-    
 
-=======
-    use HasFactory;
-    protected $table="sondeos";
 
-    protected $fillable=[ 'id','Tema','Pregunta','Poblacion'];
->>>>>>> daniel
 }

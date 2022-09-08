@@ -35,7 +35,6 @@ $sesionusuario=session('sesionusuario');
         <li class="li"><a  class="a" href="<?php echo e(route('lgbt')); ?>">COMUNIDADES LGBTI</a></li>
         <li class="li"><a class="a" href="<?php echo e(route('indigenas')); ?>">COMUNIDADES INDIGENAS</a></li>
         <li class="li"><a class="a" href="<?php echo e(route('urbanas')); ?>">COMUNIDADES URBANAS</a></li>
-<<<<<<< HEAD
         <?php
         if(isset($sesionusuario)){
         echo "<li class='li'><a class='a'>USUARIO: $sesionusuario</a></li><li class='li'><a class='a' href='olvidarusuario'>cerrar sesion</a></li>";
@@ -45,9 +44,6 @@ $sesionusuario=session('sesionusuario');
         ?>
 
 
-=======
-        <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
->>>>>>> daniel
 
 
         <li><a href="">REGISTRATE</a></li>

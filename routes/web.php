@@ -5,11 +5,9 @@ use App\Http\Controllers\PersonaxlController;
 use App\Http\Controllers\ResondeosController;
 use App\Http\Controllers\SondeoController;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Sondeo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
-
 use App\Models\Sondeo;
 
 
@@ -131,7 +129,8 @@ Route::get('/busquedas', function(Request $request){
     $consultas=Sondeo::select('Tema','Pregunta','Poblacion')
     ->where('Tema','LIKE','%'.$busqueda.'%')
     ->orwhere('Poblacion','LIKE','%'.$busqueda.'%');
-return view("consultas.busquedas",compact("consultas"));
+    return view("consultas.busquedas",compact("consultas"));
+    })->name('sdjhagasykdjh');
 
 Route::get('consultar', function (Request $request) {
 $consultas=$request->input('buscar');
@@ -274,7 +273,7 @@ Route::get('index', function () {
     })->name('resultados');
 
       //ruta de generador de resultados
-      Route::get('/estadisticas', function () {
+    Route::get('/estadisticas', function () {
         return view('vistasadmin.generar_estadisticas');
     })->name('estadisticas');
     //foros
