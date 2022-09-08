@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PersonaxlController;
 use App\Http\Controllers\ResondeosController;
 use App\Http\Controllers\SondeoController;
+use App\Models\Respuestasondeo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,15 +23,18 @@ use App\Models\Sondeo;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//olvidar sesion del administrador
 Route::get('old', function() {
     Session::forget('sesionadmin');
     echo "<script>alert('inicie sesion');window.location = 'loginadmin'</script>";
 })->name('old');
-
+// olvidar sesion del usuario
 Route::get('oldusu', function() {
     Session::forget('sesionusuario');
     echo "<script>alert('inicie sesion');window.location = 'login'</script>";
 })->name('oldusu');
+
+
 
 
 //responder sondeos
@@ -63,11 +67,11 @@ Route::get('login', function () {
 Route::get('registro', function () {
     return view('registro');
 })->name('registro');
-
+//registro del administrador
 Route::get('registroadmin', function () {
     return view('registroadmin');
 })->name('registroadmin');
-
+//login del administrador
 Route::get('loginadmin', function () {
     return view('loginadmin');
 })->name('loginadmin');
@@ -90,7 +94,7 @@ Route::post('reg',[PersonaxlController::class,'store'])->name('reg');
 
 //devolucion de controlador del formulario de registro dela dministrador
 Route::post('regAdm',[AdminController::class,'store'])->name('regAdm');
-
+//login del administrador
 Route::post('lgadmin',[AdminController::class,'index'])->name('lgadmin');
 
 Route::resource('sondeos', SondeoController::class);
@@ -277,8 +281,10 @@ Route::get('index', function () {
     })->name('certificados');
 
 
+
     //ruta de generador de resultados
     Route::get('/resultados', function () {
+        $todosondeos=Sondeo::all();
         return view('vistasadmin.resultados');
     })->name('resultados');
 

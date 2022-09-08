@@ -1,4 +1,4 @@
-@extends('layouts.administradorlayout')
+@extends('layouts.app')
 
 @section('template_title')
     {{ $sondeo->name ?? 'Show Sondeo' }}

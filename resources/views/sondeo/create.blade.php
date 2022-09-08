@@ -1,4 +1,5 @@
-@extends('layouts.administradorlayout')
+
+@extends('layouts.app')
 
 @section('template_title')
     Create Sondeo

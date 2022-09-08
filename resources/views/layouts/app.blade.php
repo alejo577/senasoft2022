@@ -1,3 +1,9 @@
+<?php
+$sesionadmin=session('sesionadmin');
+if(!isset($sesionadmin)){
+    echo "<script>alert('Inicie Sesion');window.location = 'elije'</script>";
+}
+?>
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -12,6 +18,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="/senasoft2022/resources/css/estilosadmin.css">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -71,10 +78,54 @@
                 </div>
             </div>
         </nav>
+        <div class="navegador">
+            <ul>
+            <li class="li"><a class="a" href="{{route('indexadmin')}}">INICIO</a></li>
 
+            <li class="li"><a  class="a" href="{{route('resultados')}}">RESULTADOS</a></li>
+            <li class="li"><a  class="a" href="{{route('estadisticas')}}">ESTADISTICAS</a></li>
+            <li class="li"><a  class="a" href="{{route('certificados')}}">CERTIFICADOS</a></a></li>
+            <?php
+            if(isset($sesionadmin)){
+            echo "<li class='li'><a class='a'>USUARIO: $sesionadmin</a></li><li class='li'><a class='a' href='old'>cerrar sesion</a></li>";
+            }else{
+            echo "<li class='li'><a class='a' href='elije'>INICIAR SESION</a></li>";
+            }
+            ?>
+
+        </ul>
+            </div>
         <main class="py-4">
+
             @yield('content')
         </main>
     </div>
+
+
+    <footer class="footer">
+
+        <div class="titulofooter">
+            <p>Sondeos colombia interactua con su gente</p>
+        </div>
+
+
+
+            <div class="redes">
+                <i class="fa-solid fa-envelope">  daveangelofdeath@gmail.com  - </i>
+
+                <i class="fa-brands fa-whatsapp"> 3133399549  - </i>
+
+                <i href="" class="fa fa-facebook"> senasoft 2022  </i>
+            </div>
+
+            <br>
+
+
+
+        <div class="copyrigth">
+            <p>© 2022 Senasoft, todos los derechos reservados.Autores Daniel David Albarracin Yepes y Luis Alejandro Pulido Rozo</p>
+        </div>
+
+            </footer>
 </body>
 </html>

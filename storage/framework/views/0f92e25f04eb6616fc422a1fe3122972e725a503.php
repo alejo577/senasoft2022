@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('template_title'); ?>
     <?php echo e($sondeo->name ?? 'Show Sondeo'); ?>
 
@@ -20,7 +18,7 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
                             <strong>Tema:</strong>
                             <?php echo e($sondeo->Tema); ?>
