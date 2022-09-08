@@ -284,8 +284,8 @@ Route::get('index', function () {
 
     //ruta de generador de resultados
     Route::get('/resultados', function () {
-        $todosondeos=Sondeo::all();
-        return view('vistasadmin.resultados');
+        $todosondeos=Respuestasondeo::all();
+        return view('vistasadmin.resultados',compact('todosondeos'));
     })->name('resultados');
 
       //ruta de generador de resultados
