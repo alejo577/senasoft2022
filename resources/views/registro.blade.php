@@ -21,7 +21,7 @@
         @csrf
 
         <div>
-            <label for="TDoc">Tipo de Documento</label>
+            <label for="TDoc">Tipo de Documento*</label>
             <input type="text" name="TDoc">
         </div>
         <br>
@@ -31,61 +31,61 @@
 
         <div>
 
-            <label for="NDoc">Numero de Documento</label>
+            <label for="NDoc">Numero de Documento*</label>
             <input type="text" name="NDoc">
             <label for="NDoc">@error('NDoc')<p class="alert alert-danger">{{ $message }}</p>@enderror</label>
 
         </div>
         <br>
         <div>
-            <label for="nombre">Nombres</label>
+            <label for="nombre">Nombres*</label>
             <input type="text" name="nombre">
         </div>
         <br>
         <div>
-            <label for="apellido">Apellidos</label>
+            <label for="apellido">Apellidos*</label>
             <input type="text" name="apellido">
         </div>
         <br>
         <div>
-            <label for="sexo">Sexo</label>
+            <label for="sexo">Sexo*</label>
             <input type="text" name="sexo">
 
         </div>
         <br>
         <div>
-            <label for="telcel">Telefono celular</label>
+            <label for="telcel">Telefono celular*</label>
             <input type="text" name="telcel">
         </div>
         <br>
         <div>
-            <label for="telfij">Telefono Fijo</label>
+            <label for="telfij">Telefono Fijo*</label>
             <input type="text" name="telfij">
         </div>
 
         <br>
         <div>
-            <label for="mun">Municipio</label>
+            <label for="mun">Municipio*</label>
             <input type="text" name="mun">
         </div>
         <br>
         <div>
-            <label for="dir">Direccion</label>
+            <label for="dir">Direccion*</label>
             <input type="text" name="dir">
         </div>
         <br>
         <div>
-            <label for="barrio">Barrio</label>
+            <label for="barrio">Barrio*</label>
             <input type="text" name="barrio" value="">
         </div>
         <br>
         <div>
-            <label for="email">Correo</label>
+            <label for="email">Correo*</label>
             <input type="text" name="email">
         </div>
         <br>
         <div>
-            <label for="pass">Contraseña</label>
+            <label for="pass">Contraseña*</label>
             <input type="password" name="pass">
         </div>
         <br>
@@ -103,53 +103,53 @@
 
 
         <div class="socio">
-            <h1>Datos Socioeconomicos</h1>
+            <h1>Datos Socioeconomicos*</h1>
 
             <div>
 
-                <label for="fecha">Fecha de Nacimiento</label>
+                <label for="fecha">Fecha de Nacimiento*</label>
                 <input type="text" name="fecha">
 
             </div>
             <br>
             <div>
-                <label for="etnia">Etnia</label>
+                <label for="etnia">Etnia*</label>
                 <input type="text" name="etnia">
             </div>
             <br>
             <div>
-                <label for="condiciondiscapacidad">Condicion de Discapacidad</label>
+                <label for="condiciondiscapacidad">Condicion de Discapacidad*</label>
                 <input type="text" name="condiciondiscapacidad">
             </div>
             <br>
             <div>
-                <label for="estrato">Estrato</label>
+                <label for="estrato">Estrato*</label>
                 <input type="text" name="estrato">
             </div>
             <br>
             <div>
-                <label for="NivEdu">Ultimo Nivel Educativo</label>
+                <label for="NivEdu">Ultimo Nivel Educativo*</label>
                 <input type="text" name="NivEdu">
             </div>
 
             <br>
             <div>
-                <label for="accesodisp">¿Tiene Acceso a Dispositivos?</label>
+                <label for="accesodisp">¿Tiene Acceso a Dispositivos?*</label>
                 <input type="text" name="accesodisp">
             </div>
             <br>
             <div>
-                <label for="dispositivos">Cuales dispositivos</label>
+                <label for="dispositivos">Cuales dispositivos*</label>
                 <input type="text" name="dispositivos">
             </div>
             <br>
             <div>
-                <label for="internet">¿Tiene Conectividad a Internet?</label>
+                <label for="internet">¿Tiene Conectividad a Internet?*</label>
                 <input type="text" name="internet">
             </div>
             <br>
             <div>
-                <label for="afiliacion">Tipo de Afilicion a Regimen</label>
+                <label for="afiliacion">Tipo de Afilicion a Regimen*</label>
                 <input type="text" name="afiliacion">
             </div>
             <br>
@@ -164,9 +164,9 @@
 
         <br>
         <button type="submit" class="btn btn-success">Registrarse</button>
-        <br>
-
+        <label for=""></label>
         <a href="{{route('login')}}" class="btn btn-danger">Inicie sesion</a>
+        <br>
         <a href="{{route('elije')}}" style="color: white">volver</a>
     </form>
 </div>

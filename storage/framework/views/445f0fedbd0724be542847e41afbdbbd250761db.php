@@ -15,6 +15,7 @@ if (!isset($sesionadmin)){
 </head>
 <body>
 <h1>ADMINISTRADOR  <?php echo "{$sesionadmin}"; ?></h1>
+<a href="<?php echo e(route('olvidaradmin')); ?>">Cerrar Sesion</a>
 </body>
 </html>
 <?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/x.blade.php ENDPATH**/ ?>

@@ -25,6 +25,14 @@
             <?php echo $errors->first('Poblacion', '<div class="invalid-feedback">:message</div>'); ?>
 
         </div>
+        <div class="form-group">
+            <?php echo e(Form::label('Imagen')); ?>
+
+            <?php echo e(Form::text('Imagen', $sondeo->Imagen, ['class' => 'form-control' . ($errors->has('Imagen') ? ' is-invalid' : ''), 'placeholder' => 'Imagen'])); ?>
+
+            <?php echo $errors->first('Imagen', '<div class="invalid-feedback">:message</div>'); ?>
+
+        </div>
 
     </div>
     <div class="box-footer mt20">

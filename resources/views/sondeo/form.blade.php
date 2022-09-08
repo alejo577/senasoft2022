@@ -16,6 +16,11 @@
             {{ Form::text('Poblacion', $sondeo->Poblacion, ['class' => 'form-control' . ($errors->has('Poblacion') ? ' is-invalid' : ''), 'placeholder' => 'Poblacion']) }}
             {!! $errors->first('Poblacion', '<div class="invalid-feedback">:message</div>') !!}
         </div>
+        <div class="form-group">
+            {{ Form::label('Imagen') }}
+            {{ Form::text('Imagen', $sondeo->Imagen, ['class' => 'form-control' . ($errors->has('Imagen') ? ' is-invalid' : ''), 'placeholder' => 'Imagen']) }}
+            {!! $errors->first('Imagen', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
 
     </div>
     <div class="box-footer mt20">

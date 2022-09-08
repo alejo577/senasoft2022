@@ -1,8 +1,10 @@
-@extends('layouts.appx')
+@extends('layouts.app')
 
+@section('template_title')
+    {{ $sondeo->name ?? 'Show Sondeo' }}
+@endsection
 
-
-
+@section('content')
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -17,7 +19,7 @@
                     </div>
 
                     <div class="card-body">
-
+                        
                         <div class="form-group">
                             <strong>Tema:</strong>
                             {{ $sondeo->Tema }}
@@ -30,10 +32,14 @@
                             <strong>Poblacion:</strong>
                             {{ $sondeo->Poblacion }}
                         </div>
+                        <div class="form-group">
+                            <strong>Imagen:</strong>
+                            {{ $sondeo->Imagen }}
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+@endsection

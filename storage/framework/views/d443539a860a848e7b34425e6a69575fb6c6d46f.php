@@ -1,7 +1,8 @@
+<?php $__env->startSection('template_title'); ?>
+    Sondeo
+<?php $__env->stopSection(); ?>
 
-
-
-
+<?php $__env->startSection('content'); ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -38,6 +39,7 @@
 										<th>Tema</th>
 										<th>Pregunta</th>
 										<th>Poblacion</th>
+										<th>Imagen</th>
 
                                         <th></th>
                                     </tr>
@@ -50,14 +52,13 @@
 											<td><?php echo e($sondeo->Tema); ?></td>
 											<td><?php echo e($sondeo->Pregunta); ?></td>
 											<td><?php echo e($sondeo->Poblacion); ?></td>
+											<td><?php echo e($sondeo->Imagen); ?></td>
 
                                             <td>
                                                 <form action="<?php echo e(route('sondeos.destroy',$sondeo->id)); ?>" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="<?php echo e(route('sondeos.show',$sondeo->id)); ?>"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="<?php echo e(route('sondeos.edit',$sondeo->id)); ?>"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="<?php echo e(route('sondeos.show',$sondeo->id)); ?>"><i class="fa fa-fw fa-eye"></i>Detalles</a>
+                                                    <a class="btn btn-sm btn-success" href="<?php echo e(route('sondeos.edit',$sondeo->id)); ?>"><i class="fa fa-fw fa-edit"></i>Editar</a>
                                                     <?php echo csrf_field(); ?>
-                                                    //<?php echo method_field('DELETE'); ?>
-                                                    //<button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -72,6 +73,6 @@
             </div>
         </div>
     </div>
+<?php $__env->stopSection(); ?>
 
-
-<?php echo $__env->make('layouts.appx', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/index.blade.php ENDPATH**/ ?>

@@ -2,11 +2,13 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PersonaxlController;
+use App\Http\Controllers\ResondeosController;
 use App\Http\Controllers\SondeoController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Sondeo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 
 
@@ -24,6 +26,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//responder sondeos
+
+Route::get('resondeos', function () {
+    $todosondeos=Sondeo::all();
+    return view('resondeos',compact('todosondeos'));
+})->name('resondeos');
+
+//responder sondeos controlador
+
+Route::post('res',[ResondeosController::class,'store'])->name('res');
 
 //inicio
 
@@ -117,7 +130,7 @@ Route::get('/urbanas', function () {
 
 Route::get('/busquedas', function(Request $request){
 
-    $busqueda=$request::input('consultar');
+    $busqueda=$request->input('consultar');
     $consultas=Sondeo::select('Tema','Pregunta','Poblacion')
     ->where('Tema','LIKE','%'.$busqueda.'%')
     ->orwhere('Poblacion','LIKE','%'.$busqueda.'%');
@@ -136,3 +149,15 @@ Route::get('/busqueda2', function (Request $request) {
 
     return view('busqueda2',compact('consulta'));
 })->name('busqueda2');
+
+
+Route::get('olvidaradmin}', function() {
+    Session::forget('sesionadmin');
+    echo "<script>alert('inicie sesion');window.location = 'loginadmin'</script>";
+})->name('olvidaradmin');
+
+Route::get('olvidarusuario', function() {
+    Session::forget('sesionusuario');
+    echo "<script>alert('inicie sesion');window.location = 'login'</script>";
+})->name('olvidarusuario');
+

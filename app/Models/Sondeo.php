@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $Tema
  * @property $Pregunta
  * @property $Poblacion
+ * @property $Imagen
  * @property $created_at
  * @property $updated_at
  *
@@ -34,7 +35,7 @@ class Sondeo extends Model
      *
      * @var array
      */
-    protected $fillable = ['Tema','Pregunta','Poblacion'];
+    protected $fillable = ['Tema','Pregunta','Poblacion','Imagen'];
 
 
     /**

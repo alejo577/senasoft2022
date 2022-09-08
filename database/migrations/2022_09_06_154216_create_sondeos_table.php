@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('Tema');
             $table->string('Pregunta')->unique();
             $table->string('Poblacion');
+            $table->string('Imagen')->nullable();
             $table->timestamps();
         });
     }

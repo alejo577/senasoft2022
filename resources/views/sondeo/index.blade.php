@@ -1,7 +1,10 @@
-@extends('layouts.appx')
+@extends('layouts.app')
 
+@section('template_title')
+    Sondeo
+@endsection
 
-
+@section('content')
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -36,6 +39,7 @@
 										<th>Tema</th>
 										<th>Pregunta</th>
 										<th>Poblacion</th>
+										<th>Imagen</th>
 
                                         <th></th>
                                     </tr>
@@ -48,14 +52,13 @@
 											<td>{{ $sondeo->Tema }}</td>
 											<td>{{ $sondeo->Pregunta }}</td>
 											<td>{{ $sondeo->Poblacion }}</td>
+											<td>{{ $sondeo->Imagen }}</td>
 
                                             <td>
                                                 <form action="{{ route('sondeos.destroy',$sondeo->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('sondeos.show',$sondeo->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('sondeos.edit',$sondeo->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('sondeos.show',$sondeo->id) }}"><i class="fa fa-fw fa-eye"></i>Detalles</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('sondeos.edit',$sondeo->id) }}"><i class="fa fa-fw fa-edit"></i>Editar</a>
                                                     @csrf
-                                                    //@method('DELETE')
-                                                    //<button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -69,4 +72,4 @@
             </div>
         </div>
     </div>
-
+@endsection
