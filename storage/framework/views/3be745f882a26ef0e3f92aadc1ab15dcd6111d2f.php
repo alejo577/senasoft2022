@@ -34,17 +34,7 @@
 
 <br>
 <br>
-<form  action="<?php echo e(route('consultar')); ?>" method="get">
-    <div class="contenedorbusqueda">
-    <input type="search" class="inputbuscar" placeholder="buscar"  name="consultar">
-    <label for=""></label>
-    <button type="submit" class="botonbusqueda" >BUSCAR </button>
-</div>
-</form>
 
-
-
-       </form>
 
 
        <?php echo $__env->yieldContent('content'); ?>
