@@ -18,6 +18,16 @@ $sesionusuario=session('sesionusuario');
 <body>
 
 
+
+
+
+<div class="intro">
+<a href="{{route('index')}}"> <img class="logo" src ="/senasoft2022/img/logo.png" width="150px" height="159px" >  <br/>  </img></a>
+<h1>SONDEOS SENASOFT 2022</h1>
+
+</div>
+
+
     <div class="navegador">
         <ul>
         <li class="li"><a class="a" href="{{route('index')}}">INICIO</a></li>
@@ -25,6 +35,7 @@ $sesionusuario=session('sesionusuario');
         <li class="li"><a  class="a" href="{{route('lgbt')}}">COMUNIDADES LGBTI</a></li>
         <li class="li"><a class="a" href="{{route('indigenas')}}">COMUNIDADES INDIGENAS</a></li>
         <li class="li"><a class="a" href="{{route('urbanas')}}">COMUNIDADES URBANAS</a></li>
+<<<<<<< HEAD
         <?php
         if(isset($sesionusuario)){
         echo "<li class='li'><a class='a'>USUARIO: $sesionusuario</a></li><li class='li'><a class='a' href='olvidarusuario'>cerrar sesion</a></li>";
@@ -34,24 +45,19 @@ $sesionusuario=session('sesionusuario');
         ?>
 
 
+=======
+        <li class="li"><a class="a" href="#">INICIAR SESION</a></li>
+>>>>>>> daniel
 
-    </ul>
-        </div>
+
+        <li><a href="">REGISTRATE</a></li>
+</ul>
 
        <form class="buscar" action="">
 
 
 <br>
 <br>
-<form  action="{{route('consultar')}}" method="get">
-    <div class="contenedorbusqueda">
-    <input type="search" class="inputbuscar" placeholder="buscar" type="text" name="consultar">
-    <label for=""></label>
-    <button type="submit" class="botonbusqueda" >BUSCAR </button>
-</div>
-</form>
-
-
 
        </form>
 
