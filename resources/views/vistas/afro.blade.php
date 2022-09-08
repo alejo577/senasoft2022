@@ -32,7 +32,7 @@ grid-gap: 10px; align-items: center; margin:20%; margin-top:0;margin-bottom:0; b
     <div class="card-body">
       <h5 style="font-size: 35px" class="card-title">{{$afros->Tema}}</h5>
       <p style="font-size: 30px" class="card-text">{{$afros->Poblacion}}</p>
-      <a href="#" class="btn btn-primary">responder</a>
+      <a href="resondeos" class="btn btn-primary">responder</a>
     </div>
   </div>
     @endforeach

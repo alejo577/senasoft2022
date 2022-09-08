@@ -1,4 +1,9 @@
-
+<?php
+$sesionadmin=session('sesionadmin');
+if(!isset($sesionadmin)){
+    echo "<script>alert('Inicie Sesion');window.location = 'elije'</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +24,17 @@
     <div class="navegador">
         <ul>
         <li class="li"><a class="a" href="{{route('indexadmin')}}">INICIO</a></li>
-        <li class="li"><a class="a" href="">GENERAR SONDEO</a></li>
+        <li class="li"><a class="a" href="sondeos">GENERAR SONDEO</a></li>
         <li class="li"><a  class="a" href="{{route('resultados')}}">RESULTADOS</a></li>
         <li class="li"><a  class="a" href="{{route('estadisticas')}}">ESTADISTICAS</a></li>
         <li class="li"><a  class="a" href="{{route('certificados')}}">CERTIFICADOS</a></a></li>
-
-        <li class="li"><a class="a" href="#">CERRAR SESION</a></li>
+        <?php
+        if(isset($sesionadmin)){
+        echo "<li class='li'><a class='a'>USUARIO: $sesionadmin</a></li><li class='li'><a class='a' href='old'>cerrar sesion</a></li>";
+        }else{
+        echo "<li class='li'><a class='a' href='elije'>INICIAR SESION</a></li>";
+        }
+        ?>
 
     </ul>
         </div>

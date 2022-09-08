@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 <div class="titulo">
-    <h1>ADMINISTRADOR</h1>
+    <h1>BIENVENIDO ADMINISTRADOR</h1>
     </div>
 
 <?php $__env->stopSection(); ?>

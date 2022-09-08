@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
 
 
@@ -32,7 +30,7 @@
         <div class="card-body">
           <h5 style="font-size: 35px" class="card-title"><?php echo e($urbanas->Tema); ?></h5>
           <p style="font-size: 30px" class="card-text"><?php echo e($urbanas->Poblacion); ?></p>
-          <a href="#" class="btn btn-primary">responder</a>
+          <a href="resondeos" class="btn btn-primary">responder</a>
         </div>
       </div>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

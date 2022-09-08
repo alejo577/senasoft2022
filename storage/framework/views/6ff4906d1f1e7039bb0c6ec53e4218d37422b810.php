@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('template_title'); ?>
     Create Sondeo
 <?php $__env->stopSection(); ?>
@@ -29,4 +27,4 @@
     </section>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/create.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.administradorlayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\senasoft2022\resources\views/sondeo/create.blade.php ENDPATH**/ ?>

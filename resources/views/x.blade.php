@@ -15,6 +15,6 @@ if (!isset($sesionadmin)){
 </head>
 <body>
 <h1>ADMINISTRADOR  <?php echo "{$sesionadmin}"; ?></h1>
-<a href="{{route('olvidaradmin')}}">Cerrar Sesion</a>
+<a href="{{route('old')}}">Cerrar Sesion</a>
 </body>
 </html>

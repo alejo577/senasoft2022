@@ -37,16 +37,11 @@ $sesionusuario=session('sesionusuario');
         <li class="li"><a class="a" href="<?php echo e(route('urbanas')); ?>">COMUNIDADES URBANAS</a></li>
         <?php
         if(isset($sesionusuario)){
-        echo "<li class='li'><a class='a'>USUARIO: $sesionusuario</a></li><li class='li'><a class='a' href='olvidarusuario'>cerrar sesion</a></li>";
+        echo "<li class='li'><a class='a'>USUARIO: $sesionusuario</a></li><li class='li'><a class='a' href='oldusu'>cerrar sesion</a></li>";
         }else{
         echo "<li class='li'><a class='a' href='elije'>INICIAR SESION</a></li>";
         }
         ?>
-
-
-
-
-        <li><a href="">REGISTRATE</a></li>
 </ul>
 
        <form class="buscar" action="">

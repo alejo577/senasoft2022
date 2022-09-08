@@ -29,7 +29,7 @@
     <div class="card-body">
       <h5 style="font-size: 35px" class="card-title">{{$indigenas->Tema}}</h5>
       <p style="font-size: 30px" class="card-text">{{$indigenas->Poblacion}}</p>
-      <a href="#" class="btn btn-primary">responder</a>
+      <a href="resondeos" class="btn btn-primary">responder</a>
     </div>
   </div>
     @endforeach

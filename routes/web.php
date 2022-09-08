@@ -22,7 +22,15 @@ use App\Models\Sondeo;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('old', function() {
+    Session::forget('sesionadmin');
+    echo "<script>alert('inicie sesion');window.location = 'loginadmin'</script>";
+})->name('old');
 
+Route::get('oldusu', function() {
+    Session::forget('sesionusuario');
+    echo "<script>alert('inicie sesion');window.location = 'login'</script>";
+})->name('oldusu');
 
 
 //responder sondeos
@@ -164,10 +172,12 @@ Route::get('/busqueda2', function (Request $request) {
 })->name('busqueda2');
 
 
-Route::get('olvidaradmin}', function() {
+Route::get('olvidaradmin', function() {
     Session::forget('sesionadmin');
     echo "<script>alert('inicie sesion');window.location = 'loginadmin'</script>";
 })->name('olvidaradmin');
+
+
 
 Route::get('olvidarusuario', function() {
     Session::forget('sesionusuario');

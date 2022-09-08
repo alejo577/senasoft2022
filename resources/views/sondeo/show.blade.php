@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.administradorlayout')
 
 @section('template_title')
     {{ $sondeo->name ?? 'Show Sondeo' }}
@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
                             <strong>Tema:</strong>
                             {{ $sondeo->Tema }}

@@ -31,7 +31,7 @@ class AdminController extends Controller
 
                 Session::put('sesionadmin',"$usu");
 
-                echo "<script>alert('Bienvenido {$usu}');window.location = 'x'</script>";
+                echo "<script>alert('Bienvenido {$usu}');window.location = 'sondeos'</script>";
             }else{
                 echo "<script>alert('La contraseña es incorrecta');window.location = 'loginadmin'</script>";
             }

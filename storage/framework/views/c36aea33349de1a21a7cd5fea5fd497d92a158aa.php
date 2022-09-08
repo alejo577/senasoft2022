@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
 <div class="titulo">
     <h1>RESULTADO ESTADISTICOS</h
